@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #56CCF2, #2F80ED); 
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .Card {
+            background-color: white;
+            padding: 60px;
+            margin: 60px;
+            height: 490px;
+            width: 1100px;
+           justify-content: left;
+            align-items: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+.registration {
+             position: absolute;
+            color: black;
+            font-size: 30px;
+            font-weight: 600; 
+            top: 20px;
+            left: 130px
+            
+        }
+
+        .registration-form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .registration-form .form-group {
+            flex: 1 1 calc(50% - 20px);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .registration-form .form-group input {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .registration-form .form-group.full-width {
+            flex: 1 1 100%;
+        }
+
+        .registration-form .gender {
+            margin: 20px 0;
+        }
+
+        .registration-form .gender label {
+            margin-right: 15px;
+        }
+
+        .registration-form .gender input {
+            margin-right: 5px;
+        }
+
+        .registration-form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #2F80ED;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .registration-form button:hover {
+            background: #1E60D4;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="registration">
+        Registration
+    </div>
+    <div class="Card">
+        <form class="registration-form">
+            <div class="form-group">
+                <label for="full_name">Full Name</label>
+                <input type="text" id="full_name" name="full_name" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="user_name">User Name</label>
+                <input type="text" id="user_name" name="user_name" placeholder="Enter User Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone_number">Phone Number</label>
+                <input type="tel" id="phone_number" name="phone_number" placeholder="Enter Your Number" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Your Password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+            </div>
+
+            <div class="gender">
+                <h2>Gender</h2>
+                <label></label>
+                <input type="radio" name="gender" value="male" required> Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="other"> Other
+            </div>
+            <button type="submit">Register</button>
+        </form>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
